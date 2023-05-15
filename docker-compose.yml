@@ -1,21 +1,21 @@
 version: "2"
 services:
   server:
-    image: <backend-docker-image-name>
-    container_name: <backend-container-name>
+    image: parvparikh/roomup_backend
+    container_name: roomup_backend
     restart: always
     ports:
       - "8081:8081"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/your_database_name
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/roomup
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: your_root_password
+      SPRING_DATASOURCE_PASSWORD: root
     depends_on:
       - mysql
 
   client:
-    image: <frontend-docker-image-name>
-    container_name: <frontend-container-name>
+    image: parvparikh/roomup_frontend
+    container_name: roomup_frontend
     restart: always
     # stdin_open: true
     ports:
