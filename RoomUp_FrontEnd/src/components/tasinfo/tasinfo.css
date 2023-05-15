@@ -1,0 +1,137 @@
+.Tasinfomaincontainer{
+    position: fixed;
+    top: 140px;
+    left: 255px;
+    height: 100%;
+    width: 100%;
+    background-color:#16202A;
+}
+
+.Taskid {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.taskid {
+    position: absolute;
+    top: 25px;
+    left: 220px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Taskname {
+    position: absolute;
+    top: 65px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.taskname {
+    position: absolute;
+    top: 65px;
+    left: 220px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Taskdefaultflag {
+    position: absolute;
+    top: 105px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.taskdefaultflag {
+    position: absolute;
+    top: 105px;
+    left: 220px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Taskroom {
+    position: absolute;
+    top: 145px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.taskroom {
+    position: absolute;
+    top: 145px;
+    left: 220px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Taskanswer {
+    position: absolute;
+    top: 185px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.taskanswer {
+    position: absolute;
+    top: 185px;
+    left: 220px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Taskdescription {
+    position: absolute;
+    top: 225px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.taskdescription {
+    position: absolute;
+    top: 225px;
+    left: 220px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.tasbackbutton {
+    position:absolute;
+    top: 50%;
+    left: 27%;
+    border-radius: 25px;
+    padding: 15px 20px;
+    background-color: #2F4052;
+    color: #2EEE9D;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    width: 140px;
+    line-height: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tasbackbutton:hover {
+    background-color: #808080;
+}

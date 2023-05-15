@@ -1,0 +1,154 @@
+.Sbarmaincontainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 255px;
+    background-color: #16202A;
+}
+
+.Image{
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    height: 100px;
+    width: 100px;
+}
+
+.line1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #808080;
+    top: 190px; /* change this value to adjust the line position */
+}
+
+
+.b1{
+    position:absolute;
+    top: 215px;
+    left:25px;
+    border-radius: 25px;
+    padding: 5px 30px;
+    background-color: #2F4052;
+    color: #FFFDD0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 210px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.b2{
+    position:absolute;
+    top: 260px;
+    left:25px;
+    border-radius: 25px;
+    padding: 5px 30px;
+    background-color: #2F4052;
+    color: #FFFDD0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 210px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.b3{
+    position:absolute;
+    top: 305px;
+    left:25px;
+    border-radius: 25px;
+    padding: 5px 30px;
+    background-color: #2F4052;
+    color: #2EEE9D;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 210px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.b4{
+    position:absolute;
+    top: 350px;
+    left:25px;
+    border-radius: 25px;
+    padding: 5px 30px;
+    background-color: #2F4052;
+    color: #FFFDD0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 210px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+
+.b5{
+    position:absolute;
+    top: 672px;
+    left:35px;
+    border-radius: 25px;
+    padding: 15px 30px;
+    background-color: #2F4052;
+    color: #FFFDD0;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 160px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.line2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #808080;
+    top: 405px; /* change this value to adjust the line position */
+}
+
+
+.b1:hover {
+    background-color: #808080;
+}
+
+.b2:hover {
+    background-color: #808080;
+}
+
+.b3:hover {
+    background-color: #808080;
+}
+
+.b4:hover {
+    background-color: #808080;
+}
+
+.b5:hover {
+    background-color: #808080;
+}
+
+.icon{
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 1;
+}
+
+.line3{
+    position: absolute;
+    left: 254px;
+    right: 0; 
+    height: 100%;
+    background-color: #808080;
+    top: 0px; /* change this value to adjust the line position */
+    rotate: 180deg;
+    width: 1px;
+}

@@ -1,0 +1,1 @@
+global.ngroklink="http://localhost:8080"

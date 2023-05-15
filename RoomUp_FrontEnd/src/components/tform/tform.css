@@ -1,0 +1,67 @@
+.Tdetailsmaincontainer{
+    position: fixed;
+    top: 140px;
+    left: 255px;
+    height: 100%;
+    width: 100%;
+    background-color: #16202A;
+}
+
+.taskform{
+    position:absolute;
+    top: 25px;
+    left:25px;
+    border-radius: 10px;
+    padding: 50px 20px;
+    background-color: #2F4052;
+    color: #FFFDD0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 81%;
+    height: 77%;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.Thead {
+    position: absolute;
+    top: 15px;
+    left: 29%;
+    flex: 15;
+    font-size: 35px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #FFFDD0;
+}
+
+.tformlayout{
+
+    margin-top: 75px;
+    margin-left: 85px;
+}
+.MuiFormHelperText-root {
+    color: #2EEE9D !important;
+}
+
+.tsave {
+    position:absolute;
+    top: 530px;
+    left: 527px;
+    border-radius: 25px;
+    padding: 15px 15px;
+    background-color: #2EEE9D;
+    color: #2F4052;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 140px;
+    line-height: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tsave:hover {
+    background-color: #FFFDD0;
+}
+

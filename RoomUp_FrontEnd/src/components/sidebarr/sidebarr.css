@@ -1,0 +1,92 @@
+.rbarmaincontainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 255px;
+    background-color: #16202A;
+}
+
+.RImage{
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    height: 100px;
+    width: 100px;
+}
+
+.rline1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #808080;
+    top: 190px; /* change this value to adjust the line position */
+}
+
+
+.rb4{
+    position:absolute;
+    top: 225px;
+    left:25px;
+    border-radius: 25px;
+    padding: 5px 30px;
+    background-color: #2F4052;
+    color: #2EEE9D;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 210px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.rb5{
+    position:absolute;
+    top: 660px;
+    left:35px;
+    border-radius: 25px;
+    padding: 15px 30px;
+    background-color: #2F4052;
+    color: #FFFDD0;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 160px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.rline2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #808080;
+    top: 405px; /* change this value to adjust the line position */
+}
+
+.rb4:hover {
+    background-color: #808080;
+}
+
+.rb5:hover {
+    background-color: #808080;
+}
+
+.icon{
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 1;
+}
+
+.rline3{
+    position: absolute;
+    left: 254px;
+    right: 0; 
+    height: 100%;
+    background-color: #808080;
+    top: 0px; /* change this value to adjust the line position */
+    rotate: 180deg;
+    width: 1px;
+}

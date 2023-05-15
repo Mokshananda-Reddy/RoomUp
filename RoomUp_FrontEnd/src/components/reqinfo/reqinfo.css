@@ -1,0 +1,137 @@
+.Reqinfomaincontainer{
+    position: fixed;
+    top: 140px;
+    left: 255px;
+    height: 100%;
+    width: 100%;
+    background-color:#16202A;
+}
+
+.Requestid {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.requestid {
+    position: absolute;
+    top: 25px;
+    left: 220px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Requestname {
+    position: absolute;
+    top: 65px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.requestname {
+    position: absolute;
+    top: 65px;
+    left: 220px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Requestdefaultflag {
+    position: absolute;
+    top: 105px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.requestdefaultflag {
+    position: absolute;
+    top: 105px;
+    left: 220px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Requestroom {
+    position: absolute;
+    top: 145px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.requestroom {
+    position: absolute;
+    top: 145px;
+    left: 220px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Requestanswer {
+    position: absolute;
+    top: 185px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.requestanswer {
+    position: absolute;
+    top: 185px;
+    left: 220px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Requestdescription {
+    position: absolute;
+    top: 225px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.requestdescription {
+    position: absolute;
+    top: 225px;
+    left: 220px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.reqbackbutton {
+    position:absolute;
+    top: 50%;
+    left: 27%;
+    border-radius: 25px;
+    padding: 15px 20px;
+    background-color: #2F4052;
+    color: #2EEE9D;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    width: 140px;
+    line-height: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.reqbackbutton:hover {
+    background-color: #808080;
+}

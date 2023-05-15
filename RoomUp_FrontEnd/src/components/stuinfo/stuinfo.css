@@ -1,0 +1,174 @@
+.Stuinfomaincontainer{
+    position: fixed;
+    top: 140px;
+    left: 255px;
+    height: 100%;
+    width: 100%;
+    background-color:#16202A;
+}
+
+.Studentid {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.studentid {
+    position: absolute;
+    top: 25px;
+    left: 180px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Studentname {
+    position: absolute;
+    top: 65px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.studentname {
+    position: absolute;
+    top: 65px;
+    left: 180px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Studentdob {
+    position: absolute;
+    top: 105px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.studentdob {
+    position: absolute;
+    top: 105px;
+    left: 180px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Studentgender {
+    position: absolute;
+    top: 145px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.studentgender {
+    position: absolute;
+    top: 145px;
+    left: 180px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Studentusername {
+    position: absolute;
+    top: 185px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.studentusername {
+    position: absolute;
+    top: 185px;
+    left: 180px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Studentroom {
+    position: absolute;
+    top: 225px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.studentroom {
+    position: absolute;
+    top: 225px;
+    left: 180px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.StudentadmissionID {
+    position: absolute;
+    top: 265px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.studentadmissionID {
+    position: absolute;
+    top: 265px;
+    left: 180px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+.Studentemail {
+    position: absolute;
+    top: 305px;
+    left: 35px;
+    flex: 15;
+    font-size: 19px;
+    color: #FFFDD0;
+}
+
+.studentemail {
+    position: absolute;
+    top: 305px;
+    left: 180px;
+    flex: 15;
+    font-size: 19px;
+    color: #2EEE9D;
+}
+
+
+.patbackbutton {
+    position:absolute;
+    top: 50%;
+    left: 27%;
+    border-radius: 25px;
+    padding: 15px 20px;
+    background-color: #2F4052;
+    color: #2EEE9D;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    width: 140px;
+    line-height: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.patbackbutton:hover {
+    background-color: #808080;
+}

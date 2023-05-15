@@ -1,0 +1,28 @@
+.Atbarmaincontainer {
+    position: fixed;
+    top: 75px;
+    left: 255px;
+    height: 65px;
+    width: 100%;
+    background-color: #16202A;
+}
+
+.AtPre {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    flex: 15;
+    font-size: 23px;
+    margin-left: 23px;
+    color: #FFFDD0;
+    cursor: pointer;
+}
+
+.Atdivider {
+    position: absolute;
+    left: 0px;
+    right: 0;
+    height: 1px;
+    background-color: #808080;
+    top: 64px; 
+}

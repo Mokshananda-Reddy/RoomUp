@@ -1,0 +1,46 @@
+.Pdtbarmaincontainer {
+    position: fixed;
+    top: 75px;
+    left: 255px;
+    height: 65px;
+    width: 100%;
+    background-color: #16202A;
+}
+
+.PdtPre {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    flex: 15;
+    font-size: 23px;
+    margin-left: 23px;
+    color: #FFFDD0;
+    cursor: pointer;
+}
+
+.Pdtdivider {
+    position: absolute;
+    left: 0px;
+    right: 0;
+    height: 1px;
+    background-color: #808080;
+    top: 64px; 
+}
+
+.PdtPresentUsage2 {
+    position: absolute;
+    top: 26px;
+    left: 137px;
+    color: #FFFDD0;
+}
+
+.PdtPre1 {
+    position: absolute;
+    top: 20px;
+    left: 141px;
+    flex: 15;
+    font-size: 23px;
+    margin-left: 23px;
+    color: #2EEE9D;
+    cursor: pointer;
+}

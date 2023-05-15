@@ -1,0 +1,125 @@
+.Loginmaincontainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #16202A;
+}
+
+.LImage{
+    position: absolute;
+    top: 4rem;
+    left: 41.5%;
+    height: 15rem;
+    width: 15rem;
+}
+
+.LLogo {
+    position: absolute;
+    top: 20rem;
+    left: 38%;
+    flex: 15;
+    font-size: 5rem;
+    margin-left: 1.25rem;
+    font-weight: bold;
+    color: #FFFDD0;
+}
+
+.Square1 {
+    position: absolute;
+    top: -2.1rem;
+    left: -11rem;
+    height: 25rem;
+    width: 25rem;
+    background-color: #2EEE9D;
+    rotate: -30deg;
+}
+
+.Square2 {
+    position: absolute;
+    top: 5.1rem;
+    left: 86.5rem;
+    height: 25rem;
+    width: 25rem;
+    background-color: #2EEE9D;
+    rotate: 48deg;
+}
+
+.Input1 {
+    position: absolute;
+    top: 28rem;
+    left: 38rem;
+}
+
+.Rounded-input1 {
+    width: 22rem;
+    line-height: 2.8rem;
+    border-radius: 1.6rem;
+    padding-left: 2.9rem;
+    font-size: 1.25rem;
+    text-align: left;
+    background-color: #2F4052;
+    border: none;
+    outline: none;
+    color: #FFFDD0;
+}
+
+.Input2 {
+    position: absolute;
+    top: 32rem;
+    left: 38rem;
+}
+
+.Rounded-input2 {
+    width: 22rem;
+    line-height: 2.8rem;
+    border-radius: 1.6rem;
+    padding-left: 2.9rem;
+    font-size: 1.25rem;
+    text-align: left;
+    background-color: #2F4052;
+    border: none;
+    outline: none;
+    color: #FFFDD0;
+}
+
+.Input3 {
+    position: absolute;
+    top: 36rem;
+    left: 38rem;
+}
+
+.Rounded-input3 {
+    width: 22rem;
+    line-height: 2.8rem;
+    border-radius: 1.6rem;
+    padding-left: 2.9rem;
+    font-size: 1.25rem;
+    text-align: left;
+    background-color: #2F4052;
+    border: none;
+    outline: none;
+    color: #FFFDD0;
+}
+
+.loginbutton {
+    position:absolute;
+    top: 42rem;
+    left: 44rem;
+    border-radius: 1.6rem;
+    padding: 1.25rem 1rem;
+    background-color: #2F4052;
+    color: #2EEE9D;
+    font-size: 1.75rem;
+    border: none;
+    cursor: pointer;
+    width: 10rem;
+    line-height: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.loginbutton:hover {
+    background-color: #808080;
+}

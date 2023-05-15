@@ -1,0 +1,69 @@
+.Notfoundmaincontainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #16202A;
+    /* border-radius: 20px; */
+}
+
+.NImage{
+    position: absolute;
+    top: -7%;
+    left: 32%;
+    height: 625px;
+    width: 625px;
+}
+
+.TitleName {
+    position: absolute;
+    top: 415px;
+    left: 29%;
+    flex: 15;
+    font-size: 97px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #FFFDD0;
+}
+
+.Square1 {
+    position: absolute;
+    top: -35px;
+    left: -175px;
+    height: 400px;
+    width: 400px;
+    background-color: #2EEE9D;
+    rotate: -30deg;
+}
+
+.Square2 {
+    position: absolute;
+    top: 83px;
+    left: 1385px;
+    height: 400px;
+    width: 400px;
+    background-color: #2EEE9D;
+    rotate: 48deg;
+}
+
+.backbutton {
+    position:absolute;
+    top: 600px;
+    left: 735px;
+    border-radius: 25px;
+    padding: 15px 20px;
+    background-color: #2F4052;
+    color: #2EEE9D;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    width: 140px;
+    line-height: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.backbutton:hover {
+    background-color: #808080;
+}
