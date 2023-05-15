@@ -1,6 +1,6 @@
 ---
 - name: Deploy docker images
-  hosts: client
+  hosts: localhost
   vars_files:
   - ./server/env-enc.yml
   gather_facts: yes
