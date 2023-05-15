@@ -1,1 +1,1 @@
-client localhost ansible_user=pubuntu
+localhost ansible_connection=local ansible_user=pubuntu
