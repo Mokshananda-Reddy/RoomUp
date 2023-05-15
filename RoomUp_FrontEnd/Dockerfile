@@ -1,7 +1,7 @@
 # Dockerfile for React client
 
 # Use node's version number is 18
-FROM node:18
+#FROM node:18
 
 # Create the folder "app" under the /usr/src path and set it to be the working directory
 # for the further COPY, RUN and CMD instructions
