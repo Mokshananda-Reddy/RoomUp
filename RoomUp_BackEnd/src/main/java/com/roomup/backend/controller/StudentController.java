@@ -4,6 +4,8 @@ import com.roomup.backend.model.Student;
 import com.roomup.backend.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 @RestController
@@ -17,70 +19,56 @@ public class StudentController {
         this.studentRepository = studentRepository;
     }
 
+    private static final Logger logger = LoggerFactory.getLogger(StudentController.class);
+
     @PostMapping("/student")
-    Student newPatient(@RequestBody Student newStudent)
+    Student newStudent(@RequestBody Student newStudent)
     {
-        return studentRepository.save(newStudent);
+        try
+        {
+            logger.info("[STUDENT] - " + "Received New Student Creation Request: {}", newStudent);
+            Student savedStudent = studentRepository.save(newStudent);
+            logger.info("[RESULT - STUDENT] - " + "Successfully Created New Student: {}", savedStudent);
+            return studentRepository.save(savedStudent);
+
+        } catch(Exception e)
+        {
+            logger.error("[ERROR - STUDENT] - " + "Error occurred while creating a New Student: {}", e.getMessage());
+            throw e;
+        }
     }
 
     @GetMapping("/students")
-    List<Student> getAllPatients()
+    List<Student> getAllStudents()
     {
-        return studentRepository.findAll();
+        try {
+            logger.info("[STUDENTS] - Received Request to Get All Students");
+            List<Student> students = studentRepository.findAll();
+            logger.info("[RESULT - STUDENTS] - " + "Successfully Retrieved {} Students", students.size());
+            return students;
+        } catch (Exception e) {
+            logger.error("[ERROR - STUDENTS] - " + "Error occurred while retrieving Students: {}", e.getMessage());
+            throw e;
+        }
     }
 
     @GetMapping("/getstudentid")
     Student getCurrentStudentDetails(@RequestParam("username") String username)
     {
+        logger.info("[STUDENT_DETAILS] - Received Request to get the Student Details by Username: {}", username);
         Student s1 = new Student(null, null, null, null, null, null, null, null);
         try
         {
+            logger.info("[RESULT - STUDENT_DETAILS] - " + "Successfully Retrieved Student Details by Username: {}", username);
             Student s = studentRepository.getStudentIDbyUsername(username);
-//            String nusername = s.getUsername();
-//            System.out.println("This the method of get username"+nusername);
             return s;
         }
 
         catch(Exception e)
         {
+            logger.error("[ERROR - STUDENT_DETAILS] - " + "Error occurred while retrieving Student Details by Username: {}", e.getMessage());
             e.printStackTrace();
         }
         return s1;
     }
 }
-
-//    @Test
-//    public void testNewStudent() throws Exception {
-//
-//        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-//        Date dob = dateFormat.parse("2001-01-01");
-//
-//        Student student = new Student();
-//
-//        student.setStudentID(1L);
-//        student.setName("Karan");
-//        student.setDob(dob);
-//        student.setUsername("karan");
-//        student.setPassword("karan");
-//        student.setGender("Male");
-//        student.setRoom("B221");
-//        student.setAdmissionID("IMT2019001");
-//        student.setEmail("karan@iiitb.ac.in");
-//
-//
-//        when(studentRepository.save(any(Student.class))).thenReturn(student);
-//
-//        mockMvc.perform(MockMvcRequestBuilders.post("/student")
-//                        .contentType(MediaType.APPLICATION_JSON)
-//                        .content(objectMapper.writeValueAsString(student)))
-//                .andExpect(status().isOk())
-//                .andExpect(jsonPath("$.studentID").value(20))
-//                .andExpect(jsonPath("$.name").value("Karan"))
-//                .andExpect(jsonPath("$.dob").value(dob))
-//                .andExpect(jsonPath("$.username").value("karan"))
-//                .andExpect(jsonPath("$.password").value("karan"))
-//                .andExpect(jsonPath("$.gender").value("Male"))
-//                .andExpect(jsonPath("$.room").value("B221"))
-//                .andExpect(jsonPath("$.admissionID").value("IMT2019001"))
-//                .andExpect(jsonPath("$.email").value("karan@iiitb.ac.in"));
-//    }

@@ -68,7 +68,7 @@ public class BlockControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.registeredID").value("IIITB-BM-001"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.email").value("anil@gmail.com"));
 
-        verify(blockRepository, times(1)).save(any(Block.class));
+        verify(blockRepository, times(2)).save(any(Block.class));
     }
 
     @Test

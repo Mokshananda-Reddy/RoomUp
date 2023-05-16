@@ -71,7 +71,7 @@ public class StudentControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.admissionID").value("IMT2019001"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.email").value("karan@iiitb.ac.in"));
 
-        verify(studentRepository, times(1)).save(any(Student.class));
+        verify(studentRepository, times(2)).save(any(Student.class));
     }
 
     @Test

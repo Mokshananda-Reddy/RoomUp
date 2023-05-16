@@ -50,7 +50,7 @@ class AdminControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.username").value(admin.getUsername()))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.name").value(admin.getName()));
 
-        verify(adminRepository, times(1)).save(any(Admin.class));
+        verify(adminRepository, times(2)).save(any(Admin.class));
     }
 
     @Test

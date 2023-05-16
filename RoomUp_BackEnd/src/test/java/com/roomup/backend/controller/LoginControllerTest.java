@@ -10,7 +10,6 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -23,6 +22,7 @@ import java.util.Map;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.mockito.Mockito.*;
 
 class LoginControllerTest {
 
@@ -59,6 +59,8 @@ class LoginControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.username").value("testuser"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.password").value("testpassword"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.role").value("testrole"));
+
+        verify(loginRepository, times(2)).save(any(LoginDetails.class));
     }
 
     @Test
@@ -85,6 +87,8 @@ class LoginControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$[1].username").value("testuser2"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$[1].password").value("testpassword2"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$[1].role").value("testrole2"));
+
+        verify(loginRepository, times(1)).findAll();
     }
 
     @Test

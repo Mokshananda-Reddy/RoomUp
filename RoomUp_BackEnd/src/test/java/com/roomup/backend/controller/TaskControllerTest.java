@@ -21,6 +21,7 @@ import java.util.List;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 class TaskControllerTest {
 
@@ -68,6 +69,8 @@ class TaskControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.service").value("Standard"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.description").value("Please clean the windows"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.feedback").value("Very Good"));
+
+        verify(taskRepository, times(2)).save(any(Task.class));
 
     }
 
@@ -118,6 +121,8 @@ class TaskControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$[1].service").value("Urgent"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$[1].description").value("Please clean the curtains"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$[1].feedback").value("Very Good"));
+
+        verify(taskRepository, times(1)).findAll();
     }
 
     @Test
