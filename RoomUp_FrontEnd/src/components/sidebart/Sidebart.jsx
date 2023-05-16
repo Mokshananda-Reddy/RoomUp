@@ -28,12 +28,12 @@ export default function Sidebart() {
 
             <div className="TRequiredButtons">
 
-                <buttons className="tb4" onClick={()=>navigate('/taskslist')}>
+                <button className="tb4" onClick={()=>navigate('/taskslist')}>
                     <span className="icon">
                         <i className="fa-solid fa-list-check"></i>
                     </span>
                     Tasks
-                </buttons>
+                </button>
 
                 <button className="tb5" onClick={handleLogout}>
                     <span className="icon">

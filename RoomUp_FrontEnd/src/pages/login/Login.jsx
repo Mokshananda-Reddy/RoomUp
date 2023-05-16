@@ -5,6 +5,9 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from "../../components/auth";
 
+import {useCookies} from 'react-cookie';
+
+
 export default function Login() {
 
     const navigate = useNavigate()
@@ -13,6 +16,8 @@ export default function Login() {
     const [Role, setRole] = useState('');
     const auth = useAuth()
  
+    const [cookies, setCookie] = useCookies(['name']);
+
 
     const handleInputChangeUsername = (event) => {
         setUsername(event.target.value);
@@ -25,38 +30,13 @@ export default function Login() {
     const handleInputChangeRole = (event) => {
         setRole(event.target.value);
     }
-
-    const getStudentDetails = async () => {
-        const heads = {
-          headers: {
-            'ngrok-skip-browser-warning': 'google-chrome',
-            Authorization: localStorage.getItem('jwt token')
-          },
-          params: {
-            username: Username
-          }
-        };
-      
-        console.log(Username);
-      
-        try {
-          const userdetails = await axios.get(
-            global.ngroklink + '/getstudentid',
-            heads
-          );
-      
-          console.log(userdetails);
-          localStorage.setItem('userdetails', JSON.stringify(userdetails.data));
-        } catch (error) {
-          console.log(error);
-        }
-      };
       
 
-    const handleLogin =() => {
+    const handleLogin =async() => {
         axios.post(global.ngroklink + "/validate", {"username":Username, "role":Role, "password" : Password } 
         ).then((response) => {
         console.log(response.data);
+        setCookie('name', Username, { path: '/' });
 
             if(response.data)
             {
@@ -74,14 +54,13 @@ export default function Login() {
                     navigate('dashboard', { replace: true})
                 }
 
-                if(Role === "manager") //change it to manager later
+                if(Role === "manager") 
                 {
                     navigate('/taskslist', { replace: true})
                 }
 
                 if(Role === "student")
                 {
-                    getStudentDetails();
                     navigate('/requestslist', { replace: true})
                 }
                 

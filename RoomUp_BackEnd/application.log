@@ -1,27 +1,184 @@
-2023-05-16 08:53:36.482 [main] INFO  c.r.b.controller.AdminController - [ADMINS] - Received Request to Get All Admins
-2023-05-16 08:53:36.485 [main] INFO  c.r.b.controller.AdminController - [RESULT - ADMINS] - Successfully Retrieved 2 admins
-2023-05-16 08:53:36.614 [main] INFO  c.r.b.controller.AdminController - [ADMIN] - Received New Admin Creation Request: com.roomup.backend.model.Admin@62d72091
-2023-05-16 08:53:36.615 [main] INFO  c.r.b.controller.AdminController - [RESULT - ADMIN] - Successfully Created New Admin: com.roomup.backend.model.Admin@78fd1179
-2023-05-16 08:53:36.662 [main] INFO  c.r.b.controller.BlockController - [BLOCKS] - Received Request to Get All Managers
-2023-05-16 08:53:36.663 [main] INFO  c.r.b.controller.BlockController - [RESULT - BLOCKS] - Successfully Retrieved 2 Managers
-2023-05-16 08:53:36.682 [main] INFO  c.r.b.controller.BlockController - [BLOCK] - Received New Manager Creation Request: com.roomup.backend.model.Block@6203f10f
-2023-05-16 08:53:36.682 [main] INFO  c.r.b.controller.BlockController - [RESULT - BLOCK] - Successfully Created New Manager: com.roomup.backend.model.Block@3bd1c7f0
-2023-05-16 08:53:36.768 [main] INFO  c.r.b.controller.LoginController - [LOGINS] - Received Request to Get All Logins
-2023-05-16 08:53:36.769 [main] INFO  c.r.b.controller.LoginController - [RESULT - LOGINS] - Successfully Retrieved 2 Logins
-2023-05-16 08:53:36.789 [main] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {password=testPassword, role=admin, username=testUser}
-2023-05-16 08:53:36.790 [main] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {password=testPassword, role=admin, username=testUser}
-2023-05-16 08:53:36.800 [main] INFO  c.r.b.controller.LoginController - [LOGIN] - Received New Login Creation Request: com.roomup.backend.model.LoginDetails@4848681d
-2023-05-16 08:53:36.800 [main] INFO  c.r.b.controller.LoginController - [RESULT - LOGIN] - Successfully Created New Login: com.roomup.backend.model.LoginDetails@7712c315
-2023-05-16 08:53:36.848 [main] INFO  c.r.b.controller.StudentController - [STUDENT] - Received New Student Creation Request: com.roomup.backend.model.Student@fe58644
-2023-05-16 08:53:36.848 [main] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT] - Successfully Created New Student: com.roomup.backend.model.Student@2ecb87b2
-2023-05-16 08:53:36.857 [main] INFO  c.r.b.controller.StudentController - [STUDENTS] - Received Request to Get All Students
-2023-05-16 08:53:36.857 [main] INFO  c.r.b.controller.StudentController - [RESULT - STUDENTS] - Successfully Retrieved 2 Students
-2023-05-16 08:53:36.870 [main] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: akash
-2023-05-16 08:53:36.870 [main] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: akash
-2023-05-16 08:53:36.943 [main] INFO  c.r.b.controller.TaskController - [TASKS] - Received Request to Get All Tasks
-2023-05-16 08:53:36.943 [main] INFO  c.r.b.controller.TaskController - [RESULT - TASKS] - Successfully Retrieved 2 Tasks
-2023-05-16 08:53:36.959 [main] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 1
-2023-05-16 08:53:36.960 [main] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 1
-2023-05-16 08:53:36.985 [main] INFO  c.r.b.controller.TaskController - [TASK] - Received New Task Creation Request: com.roomup.backend.model.Task@39a8c08f
-2023-05-16 08:53:36.985 [main] INFO  c.r.b.controller.TaskController - [RESULT - TASK] - Successfully Created New Task: com.roomup.backend.model.Task@5c0d876c
-
+2023-05-16 13:21:48.383 [main] INFO  c.r.b.controller.AdminController - [ADMINS] - Received Request to Get All Admins
+2023-05-16 13:21:48.386 [main] INFO  c.r.b.controller.AdminController - [RESULT - ADMINS] - Successfully Retrieved 2 admins
+2023-05-16 13:21:48.508 [main] INFO  c.r.b.controller.AdminController - [ADMIN] - Received New Admin Creation Request: com.roomup.backend.model.Admin@1e8c741c
+2023-05-16 13:21:48.510 [main] INFO  c.r.b.controller.AdminController - [RESULT - ADMIN] - Successfully Created New Admin: com.roomup.backend.model.Admin@31e1c7c
+2023-05-16 13:21:48.555 [main] INFO  c.r.b.controller.BlockController - [BLOCKS] - Received Request to Get All Managers
+2023-05-16 13:21:48.556 [main] INFO  c.r.b.controller.BlockController - [RESULT - BLOCKS] - Successfully Retrieved 2 Managers
+2023-05-16 13:21:48.573 [main] INFO  c.r.b.controller.BlockController - [BLOCK] - Received New Manager Creation Request: com.roomup.backend.model.Block@12e3cf1c
+2023-05-16 13:21:48.573 [main] INFO  c.r.b.controller.BlockController - [RESULT - BLOCK] - Successfully Created New Manager: com.roomup.backend.model.Block@70ed03e4
+2023-05-16 13:21:48.628 [main] INFO  c.r.b.controller.LoginController - [LOGINS] - Received Request to Get All Logins
+2023-05-16 13:21:48.628 [main] INFO  c.r.b.controller.LoginController - [RESULT - LOGINS] - Successfully Retrieved 2 Logins
+2023-05-16 13:21:48.640 [main] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {password=testPassword, role=admin, username=testUser}
+2023-05-16 13:21:48.641 [main] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {password=testPassword, role=admin, username=testUser}
+2023-05-16 13:21:48.655 [main] INFO  c.r.b.controller.LoginController - [LOGIN] - Received New Login Creation Request: com.roomup.backend.model.LoginDetails@2a20332b
+2023-05-16 13:21:48.655 [main] INFO  c.r.b.controller.LoginController - [RESULT - LOGIN] - Successfully Created New Login: com.roomup.backend.model.LoginDetails@2cf6b6e6
+2023-05-16 13:21:48.697 [main] INFO  c.r.b.controller.StudentController - [STUDENT] - Received New Student Creation Request: com.roomup.backend.model.Student@7bbab46e
+2023-05-16 13:21:48.697 [main] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT] - Successfully Created New Student: com.roomup.backend.model.Student@4beec7a1
+2023-05-16 13:21:48.704 [main] INFO  c.r.b.controller.StudentController - [STUDENTS] - Received Request to Get All Students
+2023-05-16 13:21:48.705 [main] INFO  c.r.b.controller.StudentController - [RESULT - STUDENTS] - Successfully Retrieved 2 Students
+2023-05-16 13:21:48.715 [main] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: akash
+2023-05-16 13:21:48.715 [main] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: akash
+2023-05-16 13:21:48.760 [main] INFO  c.r.b.controller.TaskController - [TASKS] - Received Request to Get All Tasks
+2023-05-16 13:21:48.761 [main] INFO  c.r.b.controller.TaskController - [RESULT - TASKS] - Successfully Retrieved 2 Tasks
+2023-05-16 13:21:48.774 [main] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 1
+2023-05-16 13:21:48.774 [main] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 1
+2023-05-16 13:21:48.787 [main] INFO  c.r.b.controller.TaskController - [TASK] - Received New Task Creation Request: com.roomup.backend.model.Task@189f2184
+2023-05-16 13:21:48.788 [main] INFO  c.r.b.controller.TaskController - [RESULT - TASK] - Successfully Created New Task: com.roomup.backend.model.Task@57386162
+2023-05-16 13:26:53.035 [http-nio-8081-exec-1] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {username=moksha, role=admin, password=moksha}
+2023-05-16 13:26:53.153 [http-nio-8081-exec-1] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {username=moksha, role=admin, password=moksha}
+2023-05-16 13:26:53.310 [http-nio-8081-exec-4] INFO  c.r.b.controller.StudentController - [STUDENTS] - Received Request to Get All Students
+2023-05-16 13:26:53.310 [http-nio-8081-exec-3] INFO  c.r.b.controller.BlockController - [BLOCKS] - Received Request to Get All Managers
+2023-05-16 13:26:53.401 [http-nio-8081-exec-3] INFO  c.r.b.controller.BlockController - [RESULT - BLOCKS] - Successfully Retrieved 0 Managers
+2023-05-16 13:26:53.404 [http-nio-8081-exec-4] INFO  c.r.b.controller.StudentController - [RESULT - STUDENTS] - Successfully Retrieved 0 Students
+2023-05-16 13:26:57.829 [http-nio-8081-exec-5] INFO  c.r.b.controller.BlockController - [BLOCKS] - Received Request to Get All Managers
+2023-05-16 13:26:57.833 [http-nio-8081-exec-5] INFO  c.r.b.controller.BlockController - [RESULT - BLOCKS] - Successfully Retrieved 0 Managers
+2023-05-16 13:28:30.599 [http-nio-8081-exec-10] INFO  c.r.b.controller.BlockController - [BLOCK] - Received New Manager Creation Request: com.roomup.backend.model.Block@7416572d
+2023-05-16 13:28:30.635 [http-nio-8081-exec-10] INFO  c.r.b.controller.BlockController - [RESULT - BLOCK] - Successfully Created New Manager: com.roomup.backend.model.Block@7416572d
+2023-05-16 13:28:30.664 [http-nio-8081-exec-2] INFO  c.r.b.controller.LoginController - [LOGIN] - Received New Login Creation Request: com.roomup.backend.model.LoginDetails@159667c0
+2023-05-16 13:28:30.673 [http-nio-8081-exec-2] INFO  c.r.b.controller.LoginController - [RESULT - LOGIN] - Successfully Created New Login: com.roomup.backend.model.LoginDetails@2621664f
+2023-05-16 13:28:30.708 [http-nio-8081-exec-3] INFO  c.r.b.controller.BlockController - [BLOCKS] - Received Request to Get All Managers
+2023-05-16 13:28:30.711 [http-nio-8081-exec-3] INFO  c.r.b.controller.BlockController - [RESULT - BLOCKS] - Successfully Retrieved 1 Managers
+2023-05-16 13:28:54.101 [http-nio-8081-exec-4] INFO  c.r.b.controller.BlockController - [BLOCK] - Received New Manager Creation Request: com.roomup.backend.model.Block@46b79507
+2023-05-16 13:28:54.110 [http-nio-8081-exec-4] INFO  c.r.b.controller.BlockController - [RESULT - BLOCK] - Successfully Created New Manager: com.roomup.backend.model.Block@46b79507
+2023-05-16 13:28:54.126 [http-nio-8081-exec-5] INFO  c.r.b.controller.LoginController - [LOGIN] - Received New Login Creation Request: com.roomup.backend.model.LoginDetails@4e82d61e
+2023-05-16 13:28:54.131 [http-nio-8081-exec-5] INFO  c.r.b.controller.LoginController - [RESULT - LOGIN] - Successfully Created New Login: com.roomup.backend.model.LoginDetails@e44f103
+2023-05-16 13:28:54.165 [http-nio-8081-exec-7] INFO  c.r.b.controller.BlockController - [BLOCKS] - Received Request to Get All Managers
+2023-05-16 13:28:54.174 [http-nio-8081-exec-7] INFO  c.r.b.controller.BlockController - [RESULT - BLOCKS] - Successfully Retrieved 2 Managers
+2023-05-16 13:29:06.942 [http-nio-8081-exec-6] INFO  c.r.b.controller.StudentController - [STUDENTS] - Received Request to Get All Students
+2023-05-16 13:29:06.946 [http-nio-8081-exec-6] INFO  c.r.b.controller.StudentController - [RESULT - STUDENTS] - Successfully Retrieved 0 Students
+2023-05-16 13:30:01.591 [http-nio-8081-exec-9] INFO  c.r.b.controller.StudentController - [STUDENT] - Received New Student Creation Request: com.roomup.backend.model.Student@be59aa1
+2023-05-16 13:30:01.605 [http-nio-8081-exec-9] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT] - Successfully Created New Student: com.roomup.backend.model.Student@be59aa1
+2023-05-16 13:30:01.622 [http-nio-8081-exec-10] INFO  c.r.b.controller.LoginController - [LOGIN] - Received New Login Creation Request: com.roomup.backend.model.LoginDetails@6e513276
+2023-05-16 13:30:01.628 [http-nio-8081-exec-10] INFO  c.r.b.controller.LoginController - [RESULT - LOGIN] - Successfully Created New Login: com.roomup.backend.model.LoginDetails@aacfc5f
+2023-05-16 13:30:01.663 [http-nio-8081-exec-1] INFO  c.r.b.controller.StudentController - [STUDENTS] - Received Request to Get All Students
+2023-05-16 13:30:01.668 [http-nio-8081-exec-1] INFO  c.r.b.controller.StudentController - [RESULT - STUDENTS] - Successfully Retrieved 1 Students
+2023-05-16 13:30:23.116 [http-nio-8081-exec-2] INFO  c.r.b.controller.StudentController - [STUDENT] - Received New Student Creation Request: com.roomup.backend.model.Student@4b4e3ce4
+2023-05-16 13:30:23.125 [http-nio-8081-exec-2] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT] - Successfully Created New Student: com.roomup.backend.model.Student@4b4e3ce4
+2023-05-16 13:30:23.141 [http-nio-8081-exec-3] INFO  c.r.b.controller.LoginController - [LOGIN] - Received New Login Creation Request: com.roomup.backend.model.LoginDetails@61774bc4
+2023-05-16 13:30:23.146 [http-nio-8081-exec-3] INFO  c.r.b.controller.LoginController - [RESULT - LOGIN] - Successfully Created New Login: com.roomup.backend.model.LoginDetails@606e20a4
+2023-05-16 13:30:23.182 [http-nio-8081-exec-4] INFO  c.r.b.controller.StudentController - [STUDENTS] - Received Request to Get All Students
+2023-05-16 13:30:23.188 [http-nio-8081-exec-4] INFO  c.r.b.controller.StudentController - [RESULT - STUDENTS] - Successfully Retrieved 2 Students
+2023-05-16 13:30:55.299 [http-nio-8081-exec-5] INFO  c.r.b.controller.StudentController - [STUDENT] - Received New Student Creation Request: com.roomup.backend.model.Student@16b41530
+2023-05-16 13:30:55.303 [http-nio-8081-exec-5] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT] - Successfully Created New Student: com.roomup.backend.model.Student@16b41530
+2023-05-16 13:30:55.317 [http-nio-8081-exec-7] INFO  c.r.b.controller.LoginController - [LOGIN] - Received New Login Creation Request: com.roomup.backend.model.LoginDetails@67a8091b
+2023-05-16 13:30:55.321 [http-nio-8081-exec-7] INFO  c.r.b.controller.LoginController - [RESULT - LOGIN] - Successfully Created New Login: com.roomup.backend.model.LoginDetails@57bf660b
+2023-05-16 13:30:55.353 [http-nio-8081-exec-6] INFO  c.r.b.controller.StudentController - [STUDENTS] - Received Request to Get All Students
+2023-05-16 13:30:55.363 [http-nio-8081-exec-6] INFO  c.r.b.controller.StudentController - [RESULT - STUDENTS] - Successfully Retrieved 3 Students
+2023-05-16 13:31:27.600 [http-nio-8081-exec-8] INFO  c.r.b.controller.StudentController - [STUDENT] - Received New Student Creation Request: com.roomup.backend.model.Student@7bb78d3f
+2023-05-16 13:31:27.607 [http-nio-8081-exec-8] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT] - Successfully Created New Student: com.roomup.backend.model.Student@7bb78d3f
+2023-05-16 13:31:27.620 [http-nio-8081-exec-9] INFO  c.r.b.controller.LoginController - [LOGIN] - Received New Login Creation Request: com.roomup.backend.model.LoginDetails@61424d4e
+2023-05-16 13:31:27.626 [http-nio-8081-exec-9] INFO  c.r.b.controller.LoginController - [RESULT - LOGIN] - Successfully Created New Login: com.roomup.backend.model.LoginDetails@1c84db0a
+2023-05-16 13:31:27.662 [http-nio-8081-exec-10] INFO  c.r.b.controller.StudentController - [STUDENTS] - Received Request to Get All Students
+2023-05-16 13:31:27.667 [http-nio-8081-exec-10] INFO  c.r.b.controller.StudentController - [RESULT - STUDENTS] - Successfully Retrieved 4 Students
+2023-05-16 13:31:45.047 [http-nio-8081-exec-1] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {username=student1, role=student, password=student1}
+2023-05-16 13:31:45.050 [http-nio-8081-exec-1] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {username=student1, role=student, password=student1}
+2023-05-16 13:31:45.110 [http-nio-8081-exec-3] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student1
+2023-05-16 13:31:45.110 [http-nio-8081-exec-3] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student1
+2023-05-16 13:31:45.129 [http-nio-8081-exec-5] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 1
+2023-05-16 13:31:45.129 [http-nio-8081-exec-5] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 1
+2023-05-16 13:33:22.564 [http-nio-8081-exec-6] INFO  c.r.b.controller.TaskController - [TASK] - Received New Task Creation Request: com.roomup.backend.model.Task@288c1fc
+2023-05-16 13:33:22.604 [http-nio-8081-exec-6] INFO  c.r.b.controller.TaskController - [RESULT - TASK] - Successfully Created New Task: com.roomup.backend.model.Task@288c1fc
+2023-05-16 13:33:22.649 [http-nio-8081-exec-8] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student1
+2023-05-16 13:33:22.649 [http-nio-8081-exec-8] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student1
+2023-05-16 13:33:22.669 [http-nio-8081-exec-9] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 1
+2023-05-16 13:33:22.669 [http-nio-8081-exec-9] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 1
+2023-05-16 13:33:34.505 [http-nio-8081-exec-10] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {username=student2, role=student, password=student2}
+2023-05-16 13:33:34.509 [http-nio-8081-exec-10] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {username=student2, role=student, password=student2}
+2023-05-16 13:33:34.562 [http-nio-8081-exec-2] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student2
+2023-05-16 13:33:34.562 [http-nio-8081-exec-2] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student2
+2023-05-16 13:33:34.584 [http-nio-8081-exec-4] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 2
+2023-05-16 13:33:34.584 [http-nio-8081-exec-4] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 2
+2023-05-16 13:34:08.222 [http-nio-8081-exec-5] INFO  c.r.b.controller.TaskController - [TASK] - Received New Task Creation Request: com.roomup.backend.model.Task@20ae8a51
+2023-05-16 13:34:08.233 [http-nio-8081-exec-5] INFO  c.r.b.controller.TaskController - [RESULT - TASK] - Successfully Created New Task: com.roomup.backend.model.Task@20ae8a51
+2023-05-16 13:34:08.281 [http-nio-8081-exec-7] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student2
+2023-05-16 13:34:08.281 [http-nio-8081-exec-7] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student2
+2023-05-16 13:34:08.297 [http-nio-8081-exec-6] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 2
+2023-05-16 13:34:08.298 [http-nio-8081-exec-6] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 2
+2023-05-16 13:35:19.437 [http-nio-8081-exec-9] INFO  c.r.b.controller.TaskController - [TASK] - Received New Task Creation Request: com.roomup.backend.model.Task@27fad37d
+2023-05-16 13:35:19.459 [http-nio-8081-exec-9] INFO  c.r.b.controller.TaskController - [RESULT - TASK] - Successfully Created New Task: com.roomup.backend.model.Task@27fad37d
+2023-05-16 13:35:19.510 [http-nio-8081-exec-10] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student2
+2023-05-16 13:35:19.511 [http-nio-8081-exec-10] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student2
+2023-05-16 13:35:19.526 [http-nio-8081-exec-1] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 2
+2023-05-16 13:35:19.527 [http-nio-8081-exec-1] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 2
+2023-05-16 13:36:01.050 [http-nio-8081-exec-2] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {username=student3, role=student, password=student3}
+2023-05-16 13:36:01.052 [http-nio-8081-exec-2] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {username=student3, role=student, password=student3}
+2023-05-16 13:36:01.100 [http-nio-8081-exec-4] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student3
+2023-05-16 13:36:01.100 [http-nio-8081-exec-4] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student3
+2023-05-16 13:36:01.119 [http-nio-8081-exec-7] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 3
+2023-05-16 13:36:01.119 [http-nio-8081-exec-7] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 3
+2023-05-16 13:36:33.798 [http-nio-8081-exec-6] INFO  c.r.b.controller.TaskController - [TASK] - Received New Task Creation Request: com.roomup.backend.model.Task@a1ed227
+2023-05-16 13:36:33.821 [http-nio-8081-exec-6] INFO  c.r.b.controller.TaskController - [RESULT - TASK] - Successfully Created New Task: com.roomup.backend.model.Task@a1ed227
+2023-05-16 13:36:33.872 [http-nio-8081-exec-8] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student3
+2023-05-16 13:36:33.872 [http-nio-8081-exec-8] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student3
+2023-05-16 13:36:33.889 [http-nio-8081-exec-9] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 3
+2023-05-16 13:36:33.889 [http-nio-8081-exec-9] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 3
+2023-05-16 13:36:57.532 [http-nio-8081-exec-10] INFO  c.r.b.controller.TaskController - [TASK] - Received New Task Creation Request: com.roomup.backend.model.Task@35b3c6c6
+2023-05-16 13:36:57.539 [http-nio-8081-exec-10] INFO  c.r.b.controller.TaskController - [RESULT - TASK] - Successfully Created New Task: com.roomup.backend.model.Task@35b3c6c6
+2023-05-16 13:36:57.584 [http-nio-8081-exec-1] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student3
+2023-05-16 13:36:57.584 [http-nio-8081-exec-1] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student3
+2023-05-16 13:36:57.598 [http-nio-8081-exec-2] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 3
+2023-05-16 13:36:57.598 [http-nio-8081-exec-2] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 3
+2023-05-16 13:37:54.613 [http-nio-8081-exec-3] INFO  c.r.b.controller.TaskController - [TASK] - Received New Task Creation Request: com.roomup.backend.model.Task@447996a4
+2023-05-16 13:37:54.637 [http-nio-8081-exec-3] INFO  c.r.b.controller.TaskController - [RESULT - TASK] - Successfully Created New Task: com.roomup.backend.model.Task@447996a4
+2023-05-16 13:37:54.693 [http-nio-8081-exec-4] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student3
+2023-05-16 13:37:54.693 [http-nio-8081-exec-4] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student3
+2023-05-16 13:37:54.714 [http-nio-8081-exec-5] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 3
+2023-05-16 13:37:54.714 [http-nio-8081-exec-5] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 3
+2023-05-16 13:38:07.344 [http-nio-8081-exec-7] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {username=student4, role=student, password=student4}
+2023-05-16 13:38:07.345 [http-nio-8081-exec-7] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {username=student4, role=student, password=student4}
+2023-05-16 13:38:07.388 [http-nio-8081-exec-8] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student4
+2023-05-16 13:38:07.388 [http-nio-8081-exec-8] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student4
+2023-05-16 13:38:07.406 [http-nio-8081-exec-10] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 4
+2023-05-16 13:38:07.406 [http-nio-8081-exec-10] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 4
+2023-05-16 13:38:57.380 [http-nio-8081-exec-1] INFO  c.r.b.controller.TaskController - [TASK] - Received New Task Creation Request: com.roomup.backend.model.Task@76b1fc87
+2023-05-16 13:38:57.418 [http-nio-8081-exec-1] INFO  c.r.b.controller.TaskController - [RESULT - TASK] - Successfully Created New Task: com.roomup.backend.model.Task@76b1fc87
+2023-05-16 13:38:57.469 [http-nio-8081-exec-2] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student4
+2023-05-16 13:38:57.470 [http-nio-8081-exec-2] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student4
+2023-05-16 13:38:57.489 [http-nio-8081-exec-3] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 4
+2023-05-16 13:38:57.489 [http-nio-8081-exec-3] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 4
+2023-05-16 13:39:15.779 [http-nio-8081-exec-4] INFO  c.r.b.controller.TaskController - [TASK] - Received New Task Creation Request: com.roomup.backend.model.Task@2278908f
+2023-05-16 13:39:15.803 [http-nio-8081-exec-4] INFO  c.r.b.controller.TaskController - [RESULT - TASK] - Successfully Created New Task: com.roomup.backend.model.Task@2278908f
+2023-05-16 13:39:15.849 [http-nio-8081-exec-5] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student4
+2023-05-16 13:39:15.849 [http-nio-8081-exec-5] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student4
+2023-05-16 13:39:15.864 [http-nio-8081-exec-7] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 4
+2023-05-16 13:39:15.864 [http-nio-8081-exec-7] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 4
+2023-05-16 13:39:37.808 [http-nio-8081-exec-6] INFO  c.r.b.controller.TaskController - [TASK] - Received New Task Creation Request: com.roomup.backend.model.Task@35c530b8
+2023-05-16 13:39:37.833 [http-nio-8081-exec-6] INFO  c.r.b.controller.TaskController - [RESULT - TASK] - Successfully Created New Task: com.roomup.backend.model.Task@35c530b8
+2023-05-16 13:39:37.881 [http-nio-8081-exec-8] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student4
+2023-05-16 13:39:37.881 [http-nio-8081-exec-8] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student4
+2023-05-16 13:39:37.918 [http-nio-8081-exec-9] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 4
+2023-05-16 13:39:37.918 [http-nio-8081-exec-9] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 4
+2023-05-16 13:39:59.257 [http-nio-8081-exec-10] INFO  c.r.b.controller.TaskController - [TASK] - Received New Task Creation Request: com.roomup.backend.model.Task@184e11cc
+2023-05-16 13:39:59.294 [http-nio-8081-exec-10] INFO  c.r.b.controller.TaskController - [RESULT - TASK] - Successfully Created New Task: com.roomup.backend.model.Task@184e11cc
+2023-05-16 13:39:59.338 [http-nio-8081-exec-1] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student4
+2023-05-16 13:39:59.339 [http-nio-8081-exec-1] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student4
+2023-05-16 13:39:59.351 [http-nio-8081-exec-2] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 4
+2023-05-16 13:39:59.351 [http-nio-8081-exec-2] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 4
+2023-05-16 13:40:24.132 [http-nio-8081-exec-3] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {username=manager1, role=manager, password=manager1}
+2023-05-16 13:40:24.134 [http-nio-8081-exec-3] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {username=manager1, role=manager, password=manager1}
+2023-05-16 13:40:24.177 [http-nio-8081-exec-5] INFO  c.r.b.controller.TaskController - [TASKS] - Received Request to Get All Tasks
+2023-05-16 13:40:24.183 [http-nio-8081-exec-5] INFO  c.r.b.controller.TaskController - [RESULT - TASKS] - Successfully Retrieved 10 Tasks
+2023-05-16 13:40:48.635 [http-nio-8081-exec-7] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {username=manager2, role=manager, password=manager2}
+2023-05-16 13:40:48.638 [http-nio-8081-exec-7] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {username=manager2, role=manager, password=manager2}
+2023-05-16 13:40:48.689 [http-nio-8081-exec-8] INFO  c.r.b.controller.TaskController - [TASKS] - Received Request to Get All Tasks
+2023-05-16 13:40:48.697 [http-nio-8081-exec-8] INFO  c.r.b.controller.TaskController - [RESULT - TASKS] - Successfully Retrieved 10 Tasks
+2023-05-16 13:41:18.701 [http-nio-8081-exec-10] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {username=manager1, role=manager, password=manager1}
+2023-05-16 13:41:18.704 [http-nio-8081-exec-10] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {username=manager1, role=manager, password=manager1}
+2023-05-16 13:41:18.758 [http-nio-8081-exec-3] INFO  c.r.b.controller.TaskController - [TASKS] - Received Request to Get All Tasks
+2023-05-16 13:41:18.768 [http-nio-8081-exec-3] INFO  c.r.b.controller.TaskController - [RESULT - TASKS] - Successfully Retrieved 10 Tasks
+2023-05-16 13:42:13.801 [http-nio-8081-exec-4] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {username=student1, role=student, password=student1}
+2023-05-16 13:42:13.806 [http-nio-8081-exec-4] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {username=student1, role=student, password=student1}
+2023-05-16 13:42:13.857 [http-nio-8081-exec-6] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student1
+2023-05-16 13:42:13.858 [http-nio-8081-exec-6] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student1
+2023-05-16 13:42:13.875 [http-nio-8081-exec-8] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 1
+2023-05-16 13:42:13.875 [http-nio-8081-exec-8] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 1
+2023-05-16 13:42:34.246 [http-nio-8081-exec-9] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {username=student4, role=student, password=student4}
+2023-05-16 13:42:34.249 [http-nio-8081-exec-9] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {username=student4, role=student, password=student4}
+2023-05-16 13:42:34.296 [http-nio-8081-exec-1] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: student4
+2023-05-16 13:42:34.296 [http-nio-8081-exec-1] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: student4
+2023-05-16 13:42:34.310 [http-nio-8081-exec-2] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 4
+2023-05-16 13:42:34.310 [http-nio-8081-exec-2] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 4
+2023-05-16 13:47:22.117 [http-nio-8081-exec-4] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {username=manager2, role=manager, password=manager2}
+2023-05-16 13:47:22.120 [http-nio-8081-exec-4] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {username=manager2, role=manager, password=manager2}
+2023-05-16 13:47:22.175 [http-nio-8081-exec-7] INFO  c.r.b.controller.TaskController - [TASKS] - Received Request to Get All Tasks
+2023-05-16 13:47:22.180 [http-nio-8081-exec-7] INFO  c.r.b.controller.TaskController - [RESULT - TASKS] - Successfully Retrieved 10 Tasks

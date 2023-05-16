@@ -11,7 +11,7 @@ export default function Slist() {
 
     useEffect(()=>{
         loadStudents();
-    },[user])
+    },[])
 
     const loadStudents=()=>{
         const heads = {
@@ -55,7 +55,7 @@ export default function Slist() {
                 }
             </div>  
               
-            <button className="addstudent" onClick={()=>navigate('addstudent')}>
+            <button className="addstudent" onClick={()=>navigate('/addstudent')}>
                 <span className="icon">
                     <i className="fas fa-user-plus"></i>
                 </span>

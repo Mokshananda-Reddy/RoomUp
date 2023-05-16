@@ -4,28 +4,30 @@ import { useNavigate, Outlet } from 'react-router-dom';
 import axios from "axios"
 import { useEffect, useState } from "react";
 import "../ngrok";
+import { useCookies } from 'react-cookie';
+
 
 export default function Rlist() {
 
     const navigate = useNavigate()
     const [user,setUsers] = useState([])
+    const [cookies] = useCookies(['name']);
 
     useEffect(()=>{
         loadRequests();
-    },[user])
+    }, [])
 
-    const loadRequests=async()=>{
+    const loadRequests=()=>{
         
-        const details = JSON.parse(localStorage.getItem('userdetails'));
+
+        const details = cookies.name
 
         let username = null;
 
         if (details !== null) 
         {
-            username = details.username;
+            username = details;
         }
-        // const username = details.username;
-        //console.log(username);
         
         const heads = {
             headers:{
@@ -37,24 +39,24 @@ export default function Rlist() {
             }
         };
 
-        const Stu = await axios.get(global.ngroklink + "/getstudentid", heads)
-        // console.log(Stu);
-        
-        localStorage.setItem("currstudetails", JSON.stringify(Stu.data));
-        //console.log(Stu.data);
+        axios.get(global.ngroklink + "/getstudentid", heads)
+        .then((response)=>{
+            localStorage.setItem("currstudetails", JSON.stringify(response.data));
 
-        const headts = {
-            headers:{
-                'ngrok-skip-browser-warning':'google-chrome',
-                Authorization: localStorage.getItem('jwt token')
-            },
-            params: {studentID: Stu.data['studentID']}
-        };
+            const headts = {
+                headers:{
+                    'ngrok-skip-browser-warning':'google-chrome',
+                    Authorization: localStorage.getItem('jwt token')
+                },
+                params: {studentID: response.data['studentID']}
+            };
 
-        axios.get(global.ngroklink + "/gettasksbystudentid", headts).then((result) =>{
-            setUsers([...result.data]);
-            //console.log(result.data);
+            axios.get(global.ngroklink + "/gettasksbystudentid", headts).then((result) =>{
+                setUsers([...result.data]);
+            })
+
         })
+
 
     }
 
@@ -85,7 +87,7 @@ export default function Rlist() {
                 }
             </div>
 
-                <button className="addrequest" onClick={()=>navigate('addrequest')}>
+                <button className="addrequest" onClick={()=>navigate('/addrequest')}>
                     <span className="icon">
                         <i className="fa-solid fa-clipboard"></i>
                     </span>

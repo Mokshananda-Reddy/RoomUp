@@ -13,6 +13,7 @@ export default function Sidebart() {
     const handleLogout = () => {
         auth.logout()
         navigate('/')
+        
     }
 
     return (
@@ -28,12 +29,12 @@ export default function Sidebart() {
 
             <div className="RRequiredButtons">
 
-                <buttons className="rb4" onClick={()=>navigate('/requestslist')}>
+                <button className="rb4" onClick={()=>navigate('/requestslist')}>
                     <span className="icon">
                         <i className="fa-solid fa-list-check"></i>
                     </span>
                     Services
-                </buttons>
+                </button>
 
                 <button className="rb5" onClick={handleLogout}>
                     <span className="icon">

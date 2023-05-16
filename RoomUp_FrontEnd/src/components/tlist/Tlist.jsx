@@ -12,7 +12,7 @@ export default function Tlist() {
 
     useEffect(()=>{
         loadTasks();
-    },[user])
+    },[])
 
     const loadTasks=()=>{
 

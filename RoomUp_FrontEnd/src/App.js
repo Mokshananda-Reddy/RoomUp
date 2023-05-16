@@ -33,12 +33,10 @@ function App()
 		  <Route path="/dashboard" element={<RequrieAuth><Dashboard /></RequrieAuth>} />
 
 		  <Route path="studentslist" element={<RequrieAuth><Studentslist /></RequrieAuth>}>
-			<Route path="addstudent" element={<RequrieAuth><Addstudent /></RequrieAuth>} />
 			<Route path="studentdetails" element={<RequrieAuth><Studentdetails /></RequrieAuth>} />
 		  </Route>
 
 		  <Route path="blockslist" element={<RequrieAuth><Blockslist /></RequrieAuth>}>
-			<Route path="addblock" element={<RequrieAuth><Addblock /></RequrieAuth>} />
 			<Route path="blockdetails" element={<RequrieAuth><Blockdetails /></RequrieAuth>} />
 		  </Route>
 
@@ -46,12 +44,14 @@ function App()
 			<Route path="taskdetails" element={<RequrieAuth><Taskdetails /></RequrieAuth>} />
 		  </Route>
 
-		  <Route path="requestslist" element={<RequrieAuth><Requestslist /></RequrieAuth>}>
+		  <Route path="/requestslist" element={<RequrieAuth><Requestslist /></RequrieAuth>}>
 			<Route path="requestdetails" element={<RequrieAuth><Requestdetails /></RequrieAuth>} />
-			<Route path="addrequest" element={<RequrieAuth><Addtask /></RequrieAuth>} />
+			
 		  </Route>
 
-		  
+		  <Route path="/addblock" element={<RequrieAuth><Addblock /></RequrieAuth>} />
+		  <Route path="/addstudent" element={<RequrieAuth><Addstudent /></RequrieAuth>} />
+		  <Route path="/addrequest" element={<RequrieAuth><Addtask /></RequrieAuth>} />
 		  <Route path="*" element={<Notfound />} />    
 
 	  </Routes>

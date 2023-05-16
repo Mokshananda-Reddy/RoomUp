@@ -11,7 +11,7 @@ export default function Blist() {
 
     useEffect(()=>{
         loadBlocks();
-    },[user])
+    },[])
 
     const loadBlocks=()=>{
         const heads = {
@@ -55,7 +55,7 @@ export default function Blist() {
 
             </div>
 
-            <button className="addblock" onClick={()=>navigate('addblock')}>
+            <button className="addblock" onClick={()=>navigate('/addblock')}>
                     <span className="icon">
                         <i className="fas fa-user-plus"></i>
                     </span>
