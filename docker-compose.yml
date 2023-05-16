@@ -1,31 +1,40 @@
-version: "2"
+version: '3'
 services:
-  server:
-    image: parvparikh/roomup_backend
-    container_name: roomup_backend
+  spe-mysql-container:
+    image: mysql
+    container_name: spe-mysql-container
     restart: always
-    ports:
-      - "8081:8081"
+    networks:
+      - spe-network
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3307/roomup
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
-    depends_on:
-      - mysql
-
-  client:
-    image: parvparikh/roomup_frontend
-    container_name: roomup_frontend
-    restart: always
-    # stdin_open: true
-    ports:
-      - "3000:3000"
-    # volumes:
-    #   - ./client:/usr/src/app
-  mysql:
-    image: mysql:5.7
+      MYSQL_DATABASE: "roomup"
+      MYSQL_ROOT_PASSWORD: "root"
+      
     ports:
       - "3307:3306"
-    environment:
-      MYSQL_DATABASE: root
-      MYSQL_ROOT_PASSWORD: root
+
+  spe-backend-container:
+    image: "parvparikh/roomup_backend"
+    container_name: spe-backend-container
+    restart: always
+    networks:
+      - spe-network
+    ports:
+      - "8081:8081"
+    depends_on:
+      - spe-mysql-container
+
+  spe-frontend-container:
+    image: "parvparikh/roomup_frontend"
+    container_name: spe-frontend-container
+    restart: always
+    networks:
+      - spe-network
+    ports:
+      - "3000:3000"
+    depends_on:
+      - spe-backend-container
+
+networks:
+  spe-network:
+    driver: bridge
