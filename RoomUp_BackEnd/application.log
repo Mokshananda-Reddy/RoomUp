@@ -1,0 +1,27 @@
+2023-05-16 08:53:36.482 [main] INFO  c.r.b.controller.AdminController - [ADMINS] - Received Request to Get All Admins
+2023-05-16 08:53:36.485 [main] INFO  c.r.b.controller.AdminController - [RESULT - ADMINS] - Successfully Retrieved 2 admins
+2023-05-16 08:53:36.614 [main] INFO  c.r.b.controller.AdminController - [ADMIN] - Received New Admin Creation Request: com.roomup.backend.model.Admin@62d72091
+2023-05-16 08:53:36.615 [main] INFO  c.r.b.controller.AdminController - [RESULT - ADMIN] - Successfully Created New Admin: com.roomup.backend.model.Admin@78fd1179
+2023-05-16 08:53:36.662 [main] INFO  c.r.b.controller.BlockController - [BLOCKS] - Received Request to Get All Managers
+2023-05-16 08:53:36.663 [main] INFO  c.r.b.controller.BlockController - [RESULT - BLOCKS] - Successfully Retrieved 2 Managers
+2023-05-16 08:53:36.682 [main] INFO  c.r.b.controller.BlockController - [BLOCK] - Received New Manager Creation Request: com.roomup.backend.model.Block@6203f10f
+2023-05-16 08:53:36.682 [main] INFO  c.r.b.controller.BlockController - [RESULT - BLOCK] - Successfully Created New Manager: com.roomup.backend.model.Block@3bd1c7f0
+2023-05-16 08:53:36.768 [main] INFO  c.r.b.controller.LoginController - [LOGINS] - Received Request to Get All Logins
+2023-05-16 08:53:36.769 [main] INFO  c.r.b.controller.LoginController - [RESULT - LOGINS] - Successfully Retrieved 2 Logins
+2023-05-16 08:53:36.789 [main] INFO  c.r.b.controller.LoginController - [VALIDATE] - Received Request to validate the Login: {password=testPassword, role=admin, username=testUser}
+2023-05-16 08:53:36.790 [main] INFO  c.r.b.controller.LoginController - [RESULT - VALIDATE] - Password Matches, Login Successful: {password=testPassword, role=admin, username=testUser}
+2023-05-16 08:53:36.800 [main] INFO  c.r.b.controller.LoginController - [LOGIN] - Received New Login Creation Request: com.roomup.backend.model.LoginDetails@4848681d
+2023-05-16 08:53:36.800 [main] INFO  c.r.b.controller.LoginController - [RESULT - LOGIN] - Successfully Created New Login: com.roomup.backend.model.LoginDetails@7712c315
+2023-05-16 08:53:36.848 [main] INFO  c.r.b.controller.StudentController - [STUDENT] - Received New Student Creation Request: com.roomup.backend.model.Student@fe58644
+2023-05-16 08:53:36.848 [main] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT] - Successfully Created New Student: com.roomup.backend.model.Student@2ecb87b2
+2023-05-16 08:53:36.857 [main] INFO  c.r.b.controller.StudentController - [STUDENTS] - Received Request to Get All Students
+2023-05-16 08:53:36.857 [main] INFO  c.r.b.controller.StudentController - [RESULT - STUDENTS] - Successfully Retrieved 2 Students
+2023-05-16 08:53:36.870 [main] INFO  c.r.b.controller.StudentController - [STUDENT_DETAILS] - Received Request to get the Student Details by Username: akash
+2023-05-16 08:53:36.870 [main] INFO  c.r.b.controller.StudentController - [RESULT - STUDENT_DETAILS] - Successfully Retrieved Student Details by Username: akash
+2023-05-16 08:53:36.943 [main] INFO  c.r.b.controller.TaskController - [TASKS] - Received Request to Get All Tasks
+2023-05-16 08:53:36.943 [main] INFO  c.r.b.controller.TaskController - [RESULT - TASKS] - Successfully Retrieved 2 Tasks
+2023-05-16 08:53:36.959 [main] INFO  c.r.b.controller.TaskController - [TASK_LIST] - Received Request to get the All Tasks by StudentID: 1
+2023-05-16 08:53:36.960 [main] INFO  c.r.b.controller.TaskController - [RESULT - TASK_LIST] - Successfully Retrieved All Tasks by StudentID: 1
+2023-05-16 08:53:36.985 [main] INFO  c.r.b.controller.TaskController - [TASK] - Received New Task Creation Request: com.roomup.backend.model.Task@39a8c08f
+2023-05-16 08:53:36.985 [main] INFO  c.r.b.controller.TaskController - [RESULT - TASK] - Successfully Created New Task: com.roomup.backend.model.Task@5c0d876c
+
