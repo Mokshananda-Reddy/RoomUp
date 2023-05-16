@@ -11,7 +11,7 @@ services:
       MYSQL_ROOT_PASSWORD: "root"
       
     ports:
-      - "3307:3306"
+      - "3306:3307"
 
   spe-backend-container:
     image: "parvparikh/roomup_backend"
